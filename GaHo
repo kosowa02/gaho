@@ -1,0 +1,12 @@
+if getgenv().MercenariesLoaded then
+    return
+end
+getgenv().MercenariesLoaded = true
+
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+loadstring(game:HttpGet(
+    "https://api.jnkie.com/api/v1/luascripts/public/a03c568c1d19164858deffe1d85dc77b8988700ca4edc3d4cccc4d3ef1c12586/download"
+))()
